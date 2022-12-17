@@ -1,0 +1,60 @@
+#container{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#container>div{
+    background-color: #26A69A;
+    color: #F9FBE7;
+    border-radius: 3%;
+    
+   
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+text-align: center;
+background-color: #FAFAFA;
+}
+input[type="text"]{
+width: 250px;
+height: 40px;
+background-color: #f1f3f4;
+font-weight: bold;
+font-size: small;
+font-family: 'Courier New', Courier, monospace;
+border: 0px;
+border-radius: 2%;
+}
+input[type="submit"]{
+width: 70px;
+height: 40px;
+font-family: 'Courier New', Courier, monospace;
+margin-bottom: 25px;
+border: 0px;
+border-radius: 2%;
+}
+button{
+    width: 50%;
+    border: 0px ;
+    background-color: #33333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    color: #ffffff;
+}
+@media screen  and (min-width:450px ) and (max-width:800px){
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media screen and (max-width:449px){
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
